@@ -169,4 +169,8 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 " remap F2 to NERDTreeToggle
-map <F2> :NERDTreeToggle <ENTER>
+map <F3> :NERDTreeToggle <ENTER>
+
+noremap <F1> :bprev<CR>
+noremap <F2> :bnext<CR>
+
