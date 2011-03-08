@@ -1,3 +1,30 @@
+"change the leader
+let mapleader = ","
+
+"how to clear a search
+nnoremap <leader><space> :noh<cr>
+
+"to move around with <tab>
+nnoremap <tab> %
+vnoremap <tab> %
+
+"remove movement arrows
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+"remove the F1 help
+noremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
 set nocompatible
 
 set number
@@ -121,7 +148,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
+color molokai
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -140,3 +167,6 @@ runtime! macros/matchit.vim
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+" remap F2 to NERDTreeToggle
+map <F2> :NERDTreeToggle <ENTER>

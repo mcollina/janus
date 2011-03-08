@@ -65,7 +65,7 @@ endif
 set guioptions-=T
 
 " Default gui color scheme
-color ir_black
+color molokai
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -224,3 +224,5 @@ call s:DefineCommand("mkdir", "Mkdir")
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
+
+autocmd VimEnter * NERDTree
