@@ -174,3 +174,18 @@ map <F3> :NERDTreeToggle <ENTER>
 noremap <F1> :bprev<CR>
 noremap <F2> :bnext<CR>
 
+" to access buffers easily
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" to remove buffers easily
+nnoremap <F6> :buffers<CR>:bw<Space>
+
+" to chdir when we enter a directory in NERDTree
+" so CommandT can work as expected
+let NERDTreeChDirMode = 2 
+
+set autowrite		" Automatically save before commands like :next and :make
+
+"set relativenumber " makes the line number be relative
+set undofile " creates a file with the undo history, so we can undo even if we close the file
+"set colorcolumn=85 "to print a column
