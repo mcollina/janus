@@ -178,8 +178,14 @@ endif
 " remap F2 to NERDTreeToggle
 map <F3> :NERDTreeToggle <ENTER>
 
+" buftabs configuration
 noremap <F1> :bprev<CR>
 noremap <F2> :bnext<CR>
+set laststatus=2
+let g:buftabs_in_statusline=1
+
+" to open bufferexplorer easily
+nnoremap <F4> :BufExplorer<CR>
 
 " to access buffers easily
 nnoremap <F5> :buffers<CR>:buffer<Space>
@@ -198,3 +204,4 @@ set undofile " creates a file with the undo history, so we can undo even if we c
 "set colorcolumn=85 "to print a column
 
 au FileType javascript set shiftwidth=4 tabstop=4 softtabstop=4
+
