@@ -190,3 +190,5 @@ set autowrite		" Automatically save before commands like :next and :make
 "set relativenumber " makes the line number be relative
 set undofile " creates a file with the undo history, so we can undo even if we close the file
 "set colorcolumn=85 "to print a column
+
+au FileType javascript set shiftwidth=4 tabstop=4 softtabstop=4
