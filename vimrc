@@ -105,6 +105,12 @@ au BufNewFile,BufRead *.json set ft=javascript
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
+" make javascript indent like Crockford says
+au FileType javascript set softtabstop=4 tabstop=4 shiftwidth=4
+
+" make ruby indent correctly
+au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
+
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
@@ -202,6 +208,3 @@ set autowrite		" Automatically save before commands like :next and :make
 "set relativenumber " makes the line number be relative
 set undofile " creates a file with the undo history, so we can undo even if we close the file
 "set colorcolumn=85 "to print a column
-
-au FileType javascript set shiftwidth=4 tabstop=4 softtabstop=4
-
