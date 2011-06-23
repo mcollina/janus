@@ -9,16 +9,16 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 "remove movement arrows
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
+"nnoremap j gj
+"nnoremap k gk
 
 "remove the F1 help
 noremap <F1> <ESC>
@@ -107,6 +107,9 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make javascript indent like Crockford says
 au FileType javascript set softtabstop=4 tabstop=4 shiftwidth=4
+
+" indent coffeescript to 2 spaces
+au FileType javascript set softtabstop=2 tabstop=2 shiftwidth=2
 
 " make ruby indent correctly
 au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
@@ -208,3 +211,7 @@ set autowrite		" Automatically save before commands like :next and :make
 "set relativenumber " makes the line number be relative
 set undofile " creates a file with the undo history, so we can undo even if we close the file
 "set colorcolumn=85 "to print a column
+
+" indent the whole file with a command
+map   <silent> <F5> mmgg=G'm
+imap  <silent> <F5> <Esc> mmgg=G'm
