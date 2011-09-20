@@ -109,7 +109,7 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType javascript set softtabstop=4 tabstop=4 shiftwidth=4
 
 " indent coffeescript to 2 spaces
-au FileType javascript set softtabstop=2 tabstop=2 shiftwidth=2
+au FileType coffeescript set softtabstop=2 tabstop=2 shiftwidth=2
 
 " make ruby indent correctly
 au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
