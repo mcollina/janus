@@ -105,11 +105,11 @@ au BufNewFile,BufRead *.json set ft=javascript
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
-" make javascript indent like Crockford says
-au FileType javascript set softtabstop=4 tabstop=4 shiftwidth=4
-
 " indent coffeescript to 2 spaces
 au FileType coffeescript set softtabstop=2 tabstop=2 shiftwidth=2
+
+" make javascript indent like Crockford says
+au FileType javascript set softtabstop=4 tabstop=4 shiftwidth=4
 
 " make ruby indent correctly
 au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
