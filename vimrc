@@ -106,13 +106,13 @@ au BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " indent coffeescript to 2 spaces
-au FileType coffeescript set softtabstop=2 tabstop=2 shiftwidth=2
+au BufNewFile,BufReadPost *.coffee setl softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
 " make javascript indent like Crockford says
-au FileType javascript set softtabstop=4 tabstop=4 shiftwidth=4
+au BufNewFile,BufReadPost *.js setl softtabstop=4 tabstop=4 shiftwidth=4 expandtab
 
 " make ruby indent correctly
-au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
+au BufNewFile,BufReadPost *.rb setl softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
