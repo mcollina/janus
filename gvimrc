@@ -60,6 +60,9 @@ if has("gui_macvim")
   " Adjust viewports to the same size
   map <Leader>= <C-w>=
   imap <Leader>= <Esc> <C-w>=
+
+  " Change the font size
+  :set guifont=Monaco:h14
 endif
 
 " Don't beep
