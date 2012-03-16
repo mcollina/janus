@@ -114,6 +114,9 @@ au BufNewFile,BufReadPost *.js setl softtabstop=4 tabstop=4 shiftwidth=4 expandt
 " make ruby indent correctly
 au BufNewFile,BufReadPost *.rb setl softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
+" syntax highlight for less
+au BufNewFile,BufRead *.less set filetype=less
+
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 

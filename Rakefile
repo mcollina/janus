@@ -159,6 +159,10 @@ vim_plugin_task "scala",            "git://github.com/bdd/vim-scala.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "buftabs",          "git://github.com/vim-scripts/buftabs.git"
 vim_plugin_task "bufexplorer",      "git://github.com/vim-scripts/bufexplorer.zip.git"
+vim_plugin_task "handlebars",       "git://github.com/nono/vim-handlebars.git"
+vim_plugin_task "less-syntax" do
+  sh "curl http://leafo.net/lessphp/vim/less.vim > syntax/less.vim"
+end
 
 #vim_plugin_task "hammer",           "git://github.com/robgleeson/hammer.vim.git" do
 #  sh "gem install github-markup redcarpet"
